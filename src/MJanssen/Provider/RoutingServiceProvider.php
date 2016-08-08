@@ -285,7 +285,7 @@ class RoutingServiceProvider implements ServiceProviderInterface
                 throw new \BadMethodCallException(sprintf('Method "%s::%s" does not exist.', $class, $method));
             }
 
-            $controller->$type([new $class, $method]);
+            $controller->$type(array(new $class, $method));
         }
     }
 }
