@@ -239,7 +239,7 @@ class RoutingServiceProvider implements ServiceProviderInterface
      */
     protected function addBeforeAfterMiddleware(Controller $controller, $type, $value)
     {
-        $supportedMWTypes = ['before', 'after'];
+        $supportedMWTypes = array('before', 'after');
 
         if (!in_array($type, $supportedMWTypes)) {
             throw new \UnexpectedValueException(
