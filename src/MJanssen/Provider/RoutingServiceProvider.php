@@ -1,5 +1,5 @@
 <?php
-namespace MJanssen\Provider;
+namespace garretus\Provider;
 
 use InvalidArgumentException;
 use Silex\Application;
